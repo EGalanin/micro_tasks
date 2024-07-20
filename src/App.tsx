@@ -1,5 +1,6 @@
 import {useState} from 'react';
-import {NewComponent} from './components/NewComponent';
+import {NewComponent} from './components/cashAtm/NewComponent';
+import {FullInput} from './components/fullInput/FullInput';
 
 export type FilterType = 'All' | 'RUBLS' | 'Dollars'
 
@@ -33,7 +34,8 @@ function App() {
 
   return (
       <div className="App">
-          <NewComponent onclickfilterHandler={onclickfilterHandler} curentMoney={curentMoney} />
+          <FullInput />
+          {/*<NewComponent onclickfilterHandler={onclickfilterHandler} curentMoney={curentMoney} />*/}
       </div>
   );
 }
